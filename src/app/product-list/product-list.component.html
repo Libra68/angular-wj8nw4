@@ -1,8 +1,32 @@
 <h2>Products</h2>
+<h2>Products</h2>
+
+<div style="border: solid 1px blue;padding:10px;margin-bottom:20px;" *ngFor="let product of products">
+
+  <h3>
+    <a [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="product.description else leer">
+    Description: {{ product.description }}
+  </p>
+
+<ng-template #leer>
+ <div style="color: red">No description available...</div>
+</ng-template>
+
+<hr size=1 noshade>
 
 
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
--->
+
+  <button (click)="share(1)">
+    Share
+  </button>&nbsp;
+   <button (click)="share(2)">
+    Share not
+  </button>
+  
+
+</div>

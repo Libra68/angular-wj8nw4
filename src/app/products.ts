@@ -13,6 +13,21 @@ export const products = [
     name: 'Phone Standard',
     price: 299,
     description: ''
+  },
+  {
+    name: 'Notebook High-End',
+    price: 3499,
+    description: 'High Performance Gaming Notebook'
+  },
+  {
+    name: 'Notebook Standard',
+    price: 999,
+    description: 'A great phone with one of the best cameras'
+  },
+  {
+    name: 'Notebook Beginner',
+    price: 299,
+    description: 'Low Performance waste'
   }
 ];
 

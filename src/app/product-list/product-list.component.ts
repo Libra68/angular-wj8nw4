@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Hero} from '/hero';
 import { products } from '../products';
 
 @Component({
@@ -22,6 +22,13 @@ export class ProductListComponent {
     default:
 
     }
+  }
+
+
+  addNewProduct()
+  {
+    this.products.push(new Product('new product', 'description...'));
+    //this.selectedHero = this.heroes[this.heroes.length-1];
   }
 }
 

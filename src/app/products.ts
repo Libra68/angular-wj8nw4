@@ -1,3 +1,20 @@
+let nextId = 1;
+
+export class Product {
+  id: number;
+   
+
+  constructor(id: number, public name: string, price: number, public description?: string)
+   {
+     if(id < 1)
+      this.id = nextId++;
+      else
+      this.id = id;
+    }
+}
+
+
+
 export const products = [
   {
     name: 'Phone XL',

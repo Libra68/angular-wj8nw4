@@ -1,5 +1,12 @@
 <h2>Products</h2>
-<h2>Products</h2>
+{{hero}}
+<h2>{{hero.name}} Details</h2>
+<div><span>id: </span>{{hero.id}}</div>
+<div><span>name: </span>{{hero.name}}</div>
+
+Hallo = {{(Math.random() * 255 * 255 * 255).toString(16).substr(0, 6)}}
+<div style="color:#{{(Math.random() * 255 * 255 * 255).toString(16).substr(0, 6)}};">bliblablub
+  </div>
 
 <div style="border: solid 1px blue;padding:10px;margin-bottom:20px;" *ngFor="let product of products">
 
@@ -19,13 +26,14 @@
 
 <hr size=1 noshade>
 
-
-
   <button (click)="share(1)">
     Share
   </button>&nbsp;
-   <button (click)="share(2)">
+  <button (click)="share(2)">
     Share not
+  </button>&nbsp;
+  <button (click)="share(5)">
+   do nothing
   </button>
   
 
